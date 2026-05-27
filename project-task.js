@@ -53,7 +53,7 @@ function processFile(fileName, fileData) {
 			throw new Error("File data is missing or not a string!");
 		}
 
-		if (fileData === "") {
+		if (fileData.trim() === "") {
 			throw new Error("File data cannot be empty string!");
 		}
 
